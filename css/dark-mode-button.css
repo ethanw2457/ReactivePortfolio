@@ -1,0 +1,224 @@
+.day-night-toggle-wrapper {
+  width: 3em;
+  margin: 0.75em auto;
+  box-sizing: border-box;
+  position:absolute;
+  right:0;
+  margin-top:1%;
+  margin-right:3%;
+}
+.switch {
+  position: relative;
+  z-index: 0;
+  display: block;
+  width: 3em;
+  height: 1.5em;
+  background-color: #BFE6F7;
+  border-width: 0.1em;
+  border-style: solid;
+  border-color: #80C1D7;
+  border-radius: 0.75em;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.circle {
+  position: absolute;
+  z-index: 20;
+  top: 0.1em;
+  right: 0.1em;
+  border-width: 0.1em;
+  width: 1.1em;
+  height: 1.1em;
+  background-color: #F5ED28;
+  border: 0.1em solid #E6C542;
+  border-radius: 0.55em;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+.cloud {
+  position: absolute;
+  top: 0.6em;
+  left: 0.1em;
+  width: 1.1em;
+  heigth: 1.1em;
+  transition: all 0.3s ease-in-out;
+  -webkit-animation: cloud 12s linear infinite;
+  -moz-animation: cloud 12s linear infinite;
+  -o-animation: cloud 12s linear infinite;
+  animation: cloud 12s linear infinite;
+}
+.cloud div,
+.cloud div:before,
+.cloud div:after {
+  position: absolute;
+  display: block;
+  z-index: 40;
+  width: 0.8em;
+  height: 0.4em;
+  background-color: #F5F6F8;
+  border-radius: 0.2em;
+  content: "";
+}
+.cloud div:before {
+  bottom: 0.2em;
+  left: 0.1em;
+  width: 0.4em;
+  height: 0.4em;
+}
+.cloud div:after {
+  bottom: 0.2em;
+  left: 0.4em;
+  width: 0.3em;
+  height: 0.3em;
+  border-radius: 0.15em;
+}
+.cloud div + div {
+  top: -0.1em;
+  left: -0.1em;
+}
+.cloud div + div,
+.cloud div + div:before,
+.cloud div + div:after {
+  z-index: 30;
+  width: 1em;
+  height: 0.6em;
+  background-color: #D2D4D3;
+  border-radius: 0.3em;
+}
+.cloud div + div:before {
+  bottom: 0.2em;
+  left: 0.1em;
+  width: 0.6em;
+  height: 0.6em;
+}
+.cloud div + div:after {
+  bottom: 0.2em;
+  left: 0.4em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 0.25em;
+}
+lesshat-selector {
+  -lh-property: 0; } 
+@-webkit-keyframes cloud{ 0%{left: -4em;} 100%{left: 6em;}}
+@-moz-keyframes cloud{ 0%{left: -4em;} 100%{left: 6em;}}
+@-o-keyframes cloud{ 0%{left: -4em;} 100%{left: 6em;}}
+@keyframes cloud{ 0%{left: -4em;} 100%{left: 6em;}}
+[not-existing] {
+  zoom: 1;
+}
+.day-night-toggle-wrapper input[type="checkbox"] {
+  display: none;
+}
+.day-night-toggle-wrapper input[type="checkbox"]:checked + .switch {
+  background-color: #484848;
+  border-color: #3c3c3c;
+}
+.day-night-toggle-wrapper input[type="checkbox"]:checked + .switch .circle {
+  right: 1.6em;
+  background-color: #FFFDF1;
+  border-color: #E1E5C4;
+}
+.day-night-toggle-wrapper input[type="checkbox"]:checked + .switch .moon-spots {
+  width: 0.1em;
+  height: 0.1em;
+}
+.day-night-toggle-wrapper input[type="checkbox"]:checked + .switch .moon-spots,
+.day-night-toggle-wrapper input[type="checkbox"]:checked + .switch .moon-spots:before,
+.day-night-toggle-wrapper input[type="checkbox"]:checked + .switch .moon-spots:after {
+  border-width: 0.1em;
+}
+.day-night-toggle-wrapper input[type="checkbox"]:checked + .switch .moon-spots:before {
+  height: 0.1em;
+  width: 0.1em;
+  border-radius: 0.2em;
+}
+.day-night-toggle-wrapper input[type="checkbox"]:checked + .switch .moon-spots:after {
+  height: 0.06666667em;
+  width: 0.06666667em;
+  border-radius: 0.13333333em;
+}
+.day-night-toggle-wrapper input[type="checkbox"]:checked + .switch .cloud {
+  opacity: 0;
+}
+.day-night-toggle-wrapper input[type="checkbox"]:checked + .switch .stars {
+  opacity: 1;
+}
+.moon-spots {
+  top: 0.07142857em;
+  right: 0.07142857em;
+  z-index: 10;
+}
+.moon-spots,
+.moon-spots:before,
+.moon-spots:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  background-color: #EFEED9;
+  border: 0 solid #E1E5C4;
+  border-color: #E1E5C4;
+  border-radius: 50%;
+  content: "";
+  transition: all 0.3s ease-in-out;
+}
+.moon-spots:before {
+  right: 0.6em;
+}
+.moon-spots:after {
+  right: 0.1em;
+  bottom: -0.6em;
+}
+.stars {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.6em;
+  height: 1.3em;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.stars div {
+  bottom: 0.2em;
+  left: 0;
+  width: 0.13em;
+  height: 0.13em;
+}
+.stars div,
+.stars div:before,
+.stars div:after {
+  position: absolute;
+  display: block;
+  background-color: #FEFEFE;
+  border-radius: 50%;
+  content: "";
+}
+.stars div:before {
+  bottom: 0.7em;
+  left: 0.3em;
+  width: 0.0625em;
+  height: 0.0625em;
+}
+.stars div:after {
+  bottom: 1em;
+  left: -0.1em;
+  width: 0.1em;
+  height: 0.1em;
+}
+.stars div + div {
+  top: 0.55em;
+  left: 1.3em;
+  right: 0;
+}
+.stars div + div:before {
+  bottom: -0.2em;
+  left: -0.4em;
+}
+.stars div + div:after {
+  bottom: -0.4em;
+  left: -0.05em;
+}

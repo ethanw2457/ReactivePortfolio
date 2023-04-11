@@ -1,0 +1,35 @@
+body {
+	background-color: #1c1c1c;
+	color:#fff;
+}
+a {
+  color: #fff;
+}
+a:hover, a:active, a:focus {
+    color: #fff;
+}
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+  background: #2c2c2c;
+}
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
+	color: #fff; 
+}
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p {
+	color: #ccc; 
+}
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p a {
+	color: #e75480; 
+}
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 a {
+  color: #fff; 
+}
+.services {
+  background-color:#3c3c3c;
+}
+.services p, .services h3 {
+  color: #eee;
+}
+.second{
+	background-color:#4c4c4c;
+	color:#eee;
+}
