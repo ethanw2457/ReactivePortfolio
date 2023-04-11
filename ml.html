@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mehul Kumar Nirala</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/hearts.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Indie+Flower'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+</head>
+
+<body>
+
+    <div class="header">
+		<canvas></canvas><canvas></canvas>
+        <div class="fixed-content">
+            <img class="port" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/95581/cat.jpg">
+            <h2>Mehul Kumar Nirala</h2>
+            <p style="color:#fff;">Deep Learning | Open Source enthusiast</p>
+            <div class="icon-row">
+                <a href="https://github.com/MuLx10"><i class="fa fa-github"></i></a>
+                <a href="https://codepen.io/MuLx10/pens/public"><i class="fa fa-codepen"></i></a>
+                <a href="https://www.linkedin.com/in/mulx10/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/channel/UCjjFH9N2NbldiSS4-JuEB4g"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="second">
+        <div class="fixed-content">
+            <h1>Machine Learning & Artificial Intelligence</h1>
+            <p>Some of my computer vision and ML works.</p>
+        </div>
+    </div>
+
+    <section class="colorlib-experience" data-section="experience">
+        <div class="colorlib-narrow-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="timeline-centered">
+                            <script type="text/javascript">
+                                var AT = ["Mlpack", "OpenCV", "Firefly", "WikiGenerator", "WordSequencePredictor", "PokemonDataset"];
+                                var internType = ["Google Summer of Code", "Computer Vision", "Self Driving", "LSTM", "RNN", "Autoencoder"];
+                                var descriptions = [
+								    "A fast, flexible machine learning library",
+                                    "Codes of Open CV in C++ and python.",
+                                    "Enhancing Object Detection in using Thermal Imaging for thin cross-section unidentifiable objects(eg. cyclist, pedestrians)",
+									"Generates articles using LSTM -RNN",
+									"Predicts the next sequence of words given 3 input word sequence",
+									"Autoencoder implemented for pokemon dataset"
+                                ];
+								var icons = ["c.png", "visible.png","fire-element.png","artificial-intelligence.png", "inscription.png", "pikachu-pokemon.png"];
+								var url=["mlpack", "firefly","WikiGenerator-LSTM","WordSequencePredictor-RNN"];
+                                for (let i = 0; i < AT.length; i++) {
+                                    var dir = (i % 2 == 0) ? "Right" : "Left";
+                                    document.write(
+                                        '<article class="timeline-entry animate-box" data-animate-effect="fadeIn' + dir + '">\
+										<div class="timeline-entry-inner">\
+											<div class="timeline-icon color-' + (i%3+1) + '">\
+												<img src="https://img.icons8.com/color/35/000000/'+icons[i]+'"/>\
+											</div>\
+											<div class="timeline-label">\
+												<h2><a href="https://github.com/MuLx10/'+url[i]+'">' + AT[i] + '</a></h2>\
+												<p><strong><a href="https://github.com/MuLx10/'+url[i]+'">' + internType[i] + '</a></strong>\
+													<br> ' + descriptions[i] + '</p>\
+												<p></p>\
+											</div>\
+										</div>\
+									</article>');
+                                }
+                            </script>
+                            <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+                                <div class="timeline-entry-inner">
+                                    <div class="timeline-icon color-3">
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+    </section>
+
+    <div class="footer">
+        <div class="second">
+            <div class="fixed-content">
+                <h1>Contact Me</h1>
+            </div>
+        </div>
+        <div class="fixed-content">
+            <div class="icon-row blue">
+                <a href="https://twitter.com/nirala_mehul"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/mulx10"><i class="fa fa-facebook"></i></a>
+                <a href="mailto:mehulkumarnirala@gmail.com"><i class="fa fa-envelope"></i><a/a>
+			<a href="https://twitter.com/nirala_mehul"><i class="fa fa-stack-overflow"></i></a>
+                <a href="skype:live:.cid.fd89af8f47d6b546"><i class="fa fa-skype"></i></a>
+            </div>
+            <p></p>
+            <i class="fa fa-chevron-up blue" style="color:#bbb;" onclick="window.scroll({  top: 0,  left: 0,  behavior: 'smooth'});"></i>
+        </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/modernizr.min.js"></script>
+	<script src="js/hex.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
